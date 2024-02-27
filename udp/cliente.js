@@ -9,7 +9,9 @@ client.on("message", (data) => {
   perguntar();
 });
 
-client.on("error", (error) => {});
+client.on("error", (error) => {
+  console.log("Error: ", error);
+});
 
 client.on("close", () => {});
 
